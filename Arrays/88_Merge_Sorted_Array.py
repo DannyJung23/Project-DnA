@@ -1,4 +1,5 @@
 """
+Approach:
 Make 3 pointers starting from the end of the valid numbers of nums1, the end of nums2, and the physical end of nums1.
 Scanning from the back, compare the numbers in nums1 and nums2 and fill up the 0 at k with the larger number.
 """
