@@ -11,6 +11,7 @@ The problems I solved are from <a href="https://leetcode.com/"> LeetCode.
 ```python
 def solve_problem(problem):
   understand(problem)
+  get_intuition(problem)
   analyse(problem)
   
   if is_easy_enough(problem):
