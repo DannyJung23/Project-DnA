@@ -1,5 +1,5 @@
 # Project-DnA
-This repo is my journal to document all the Data Structures and Algorithms concepts and their implementation I learned while solving programming problems and interview questions.
+This repo is my journal to document all the Data Structures and Algorithms concepts and their implementation I learned while solving programming problems.
 
 The solutions to the problems are grouped under their respective subtopic and concepts, focusing on repeatedly applying the common patterns.
 
