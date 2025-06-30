@@ -36,9 +36,12 @@ def canFinish(self, numCourses, prerequisites):
 
 """
 Approach:
-Topologically sort the graph by performing BFS and Zero-Indegree Sorting (Kahn's Algorithm) using deque().
+Topologically sort the graph by performing BFS and Zero-Indegree Sorting using deque().
 If the graph is not a DAG, the algorithm will eventually stop when it can't find a zero-indegree node.
 Return True if the algorithm successfully visits all the nodes.
+
+Algorithm:
+Kahn's topological sorting (zero-indegree sorting)
 """
 
 # 3ms solution - O(n+e)
