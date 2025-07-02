@@ -30,13 +30,3 @@ class DoubleHashTable:
 
     def get_step_size(self, key):
         return self.secondary_hash_value - (key % self.secondary_hash_value)
-
-def primes(n):
-	n_plus_1 = n + 1
-	num_list = list(range(n_plus_1)) 
-	num_list[1] = 0
-	square_root_n = int(round(n**0.5))
-	for i in range(2, square_root_n + 1): 
-		if num_list[i]:           
-			num_list[i*i: n_plus_1: i] = [0] * len(range(i*i, n_plus_1, i))
-	return list(filter(lambda x: x >= 1,num_list))
