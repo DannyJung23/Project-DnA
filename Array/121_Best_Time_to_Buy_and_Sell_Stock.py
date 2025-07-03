@@ -5,7 +5,7 @@ While iterating through the list, update the buying price if a price is lower th
 If not, calculate the difference between prices[i] and the current buying price. Update the maximum profit if it's larger than the current maximum profit.
 """
 
-# 65ms solution - O(n)
+# 48ms solution - O(n)
 
 def maxProfit(self, prices):
     buying_index = 0
