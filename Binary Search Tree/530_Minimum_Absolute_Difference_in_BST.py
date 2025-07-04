@@ -4,7 +4,7 @@ Implement recursive DFS in-order traversal in the BST which starts at the smalle
 Get the minimum difference between each adjacent node pair.
 """
 
-# 7ms solution - O(n)
+# 3ms solution - O(n)
 
 def getMinimumDifference(self, root):
     self.min_diff = float('inf')
