@@ -24,10 +24,3 @@ class Node:
 
     def __str__(self):
         return str(self.data)
-
-def print_node_chain(first_node):
-    current = first_node
-    while current:
-        print(current, end=" ")
-        current = current.get_next()
-    print()
