@@ -9,7 +9,6 @@ If one list has no more nodes, append the remaining nodes from the other list to
 # 0ms solution - O(n)
 
 def mergeTwoLists(self, list1, list2):
-
     if list1 == None and list2 == None:  # if [], []
         return None
     if list1 == None:  # if [], [...]
@@ -54,3 +53,25 @@ def mergeTwoLists(self, list1, list2):
             pointer1 = pointer1.next
     
     return merged_head
+
+
+# 0ms solution - O(n)
+
+def mergeTwoLists(self, list1, list2):
+    merged_head = [] # ListNode()
+    current_node = merged_head
+
+    while list1 and list2:
+        if list1.val <= list2.val:
+            current_node.next = list1
+            current_node = list1
+            list1 = list1.next
+        else:
+            current_node.next = list2
+            current_node = list2
+            list2 = list2.next
+    
+    if list1 or list2:
+        current_node.next = list1 if list1 else list2
+    
+    return merged_head.next
