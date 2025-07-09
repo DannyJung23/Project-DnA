@@ -10,9 +10,11 @@ def invertTree(self, root):
     if root is None:
         return None
     
+    # bottom-up recursion
     left = self.invertTree(root.left)
     right = self.invertTree(root.right)
 
+    # swap the children
     root.left = right
     root.right = left
 
